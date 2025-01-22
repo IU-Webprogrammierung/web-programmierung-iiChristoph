@@ -1,0 +1,29 @@
+# Betriebssystem-spezifische Dateien
+.DS_Store        # macOS-Dateien
+Thumbs.db        # Windows-Dateien
+
+# Temporäre und Backup-Dateien
+*.tmp            # Temporäre Dateien
+*.temp           # Weitere temporäre Dateien
+*.swp            # Swap-Dateien (z. B. von Vim)
+*.bak            # Backup-Dateien
+*.old            # Alte Dateien
+
+# Visual Studio Code spezifische Dateien
+.vscode/         # Benutzerdefinierte VS Code-Einstellungen
+.vscode/settings.json
+.vscode/tasks.json
+.vscode/launch.json
+
+# Logs
+*.log            # Debugging- oder Fehlerlogs
+
+
+# Optional: Images oder Medien-Dateien von Design-Tools
+*.psd            # Photoshop-Dateien
+*.ai             # Adobe Illustrator-Dateien
+*.xcf            # GIMP-Dateien
+
+# Build- oder Distributions-Verzeichnisse (falls manuelle Builds generiert werden)
+dist/
+build/
