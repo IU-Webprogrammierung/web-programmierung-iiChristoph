@@ -3,9 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Christoph Birtsis</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
-    
+
+<header>
+    <nav>
+        <ul class="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Über mich</a></li>
+            <li><a href="#">Leistungen</a></li>
+            <li><a href="#">Lebenslauf</a></li>
+            <li><a href="#">Sprüche</a></li>
+            <li><a href="#contact">Kontaktier mich</a></li>
+        </ul>
+    </nav>
+
+    <div>
+        <h1>Christoph Birtsis</h1>
+        <h6>User Experience Design Student</h6>
+    </div>  
+</header>
+<section>
+    <div>
+        <div>
+            <img src = "">
+        </div>
+        <div class="about-details">
+            <div class="about-heading">
+                <h1>Über mich</h1>
+            </div>
+            <p>Ich heiße Christoph und studiere berufsbegleitend User Experience Design. Während meiner Teilnahme an verschiedenen Creative Labs konnte ich mir neue Skills aneignen und mich stetig weiterentwickeln. Besonders fasziniert mich das Zusammenspiel von Komponenten, um Nutzern oder Kunden eine optimale Erfahrung zu bieten. Neben dem Studium arbeite ich hauptberuflich bei einem Automobilhersteller in der Logistik und bringe dort meine Leidenschaft für Design und effiziente Prozesse ein.
+            </p>
+            <div class="social-media">
+                <ul class="nav-list">
+                    <li>
+                        <a href="#" class="icon-link">
+                            <i class="fab fa-pinterest-square"></i>
+                        </a>    
+                    </li>
+                    <li>
+                        <a href="#" class="icon-link">
+                            <i class="fab fa-behance-square"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/christoph_mp/" class="icon-link">
+                            <i class="fab fa-instagram-square"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<section class="contact" id="contact">
+    <div class="container">
+        <div class="section-heading">
+            <h1>Kontaktier mich</h1>
+            <h6>Lass uns zusammenarbeiten</h6>
+        </div>
+        <form action="">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Name eingeben..." required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Emailadresse eingeben..." required>
+
+            <label for="service">Leistungen:</label>
+            <select name="services" id="service">
+                <option value="Design Konzept"></option>
+                <option value="Usability Analyse"></option>
+                <option value="Sonstige"></option>
+            </select>
+            <label for="subject">Ihr Anliegen:</label>
+            <textarea name="subject" id="subject" cols="10" rows="10"></textarea>
+            <input type="submit" value="submit">
+        </form>
+    </div>
+</section>
+
+<footer class="copyright">
+  <div class="up" id=up>
+        <i class="fas fa-chevron-up"></i>
+  </div>
+    <p>&copy; 2025 Christoph Birtsis</p>
+</footer>
+
+
 </body>
 </html>
