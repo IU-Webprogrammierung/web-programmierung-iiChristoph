@@ -9,13 +9,13 @@ Dieses Projekt wird ihm Rahmen des Creative Labs der IU Internationalen Hochschu
 
 ## Verzeichnisstruktur
 
-📦 web-programmierung-iiChristoph
-┣ 📁 images
-┣ 📁 style
-┣ 📄 index.html
-┣ 📄 impressum.html
-┣ 📄 README.md
-┗ 📄 .gitignore
+    📦 web-programmierung-iiChristoph
+    ┣ 📁 images
+    ┣ 📁 style
+    ┣ 📄 index.html
+    ┣ 📄 impressum.html
+    ┣ 📄 README.md
+    ┗ 📄 .gitignore
 
 ## ☑️ Anforderungen des Projekts
 
