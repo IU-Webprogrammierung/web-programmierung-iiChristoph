@@ -42,7 +42,7 @@ In der ersten Phase habe ich mir die Werkzeuge und Tools eingerichtet, um effizi
 
 Ich habe mich, wie in der ersten Phase erwünscht, primär auf HTML und Barrierefreiheit-Tags konzentriert. Wie die Webseite aufgebaut sein soll und wie der Breakpoint gesetzt ist, habe ich in der PDF mit dem Konzept aufgezeigt. Je nach Aufwand werde ich einen dritten Breakpoint hinzufügen. Ich habe die meiste Zeit auf einem develop-Branch gearbeitet und diesen am Ende der Phase gemerged.
 
-Ich hoffe, der Umfang der Seite passt bislang, da ich mich für einen One-Pager entschieden habe. Des Weiteren habe ich hier in der README ein wenig dokumentiert und werde dies weiter fortführen. Bisher habe ich die Seite mit Lighthouse getestet und 94 % erreicht. Das Testen macht aber wahrscheinlich mehr Sinn, wenn die Seite auch fertig gestylt ist.
+Ich hoffe, der Umfang der Seite passt bislang, da ich mich für einen One-Pager entschieden habe. Des Weiteren habe ich hier in der README ein wenig dokumentiert und werde dies weiter fortführen. Bisher habe ich die Seite mit Lighthouse getestet und 95 % erreicht. Das Testen macht aber wahrscheinlich mehr Sinn, wenn die Seite auch fertig gestylt ist.
 
 Da eine Impressum-Seite Pflicht ist, habe ich eine erstellt. Die Inhalte, die eine übliche Impressum-Seite enthalten sollte, habe ich fiktiv generieren lassen. Ich hoffe, das ist so in Ordnung.
 
