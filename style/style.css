@@ -14,9 +14,28 @@ html{
 body{
     width: auto;
     height: 100%;
-    background:url("/images/sitebg2.jpg") no-repeat center fixed;
+    background:url("/images/sitebg2.jpeg") no-repeat center fixed;
     background-size: cover;
     
+}
+
+section{
+    padding: 6rem 0;
+}
+
+a{
+    text-decoration: none;
+    color: #000000;
+}
+
+p{
+    font-size: 1.8rem;
+    font-weight: 300;
+
+}
+
+img{
+    width: 100%;
 }
 
 .landing-pg-text{
@@ -40,3 +59,96 @@ body{
     font-size: 2rem;
     font-weight: 300;
 }
+
+nav {
+    padding: 1rem 0; /* Optional: Padding oben und unten */
+  }
+  
+  /* Styling für die Navigationsliste */
+  .nav-list {
+    display: flex; /* Flexbox verwenden, um die Listenelemente nebeneinander anzuzeigen */
+    justify-content: space-evenly; /* Verteilt die Listenelemente gleichmäßig */
+    align-items: center; /* Zentriert die Listenelemente vertikal */
+    padding: 0; /* Entfernt Standard-Padding der ul */
+    margin: 0; /* Entfernt Standard-Margin der ul */
+    list-style: none; /* Entfernt die Aufzählungszeichen */
+  }
+  
+  /* Styling für die Listenelemente */
+  .nav-list li {
+    margin: 0 20px; /* Optionaler Abstand zwischen den einzelnen Listenelementen */
+  }
+  
+  /* Styling für die Links */
+  .nav-list a {
+    color: rgb(0, 0, 0); /* Textfarbe der Links */
+    text-decoration: none; /* Entfernt die Unterstreichung der Links */
+    font-size: 1.6rem; /* Schriftgröße */
+    padding: 10px 15px; /* Padding für etwas Abstand rund um den Text */
+    display: block; /* Damit das Padding auf den gesamten Link angewendet wird */
+  }
+  
+  /* Hover-Effekt für die Links */
+  .nav-list a:hover {
+    background-color: #00ff95; /* Hintergrundfarbe beim Hover */
+  }
+
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 5.5rem; /* 60px => 6 * 10px (font-size des Root-Elements) */
+    height: 3.0rem; /* 34px => 3.4 * 10px */
+  }
+  
+  /* Toggle Switch */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* Der Slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+  }
+  
+  /* Der Kreis im Inneren des Sliders */
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 2.0rem; /* 26px => 2.6 * 10px */
+    width: 2.0rem; /* 26px => 2.6 * 10px */
+    left: 0.4rem; /* 4px => 0.4 * 10px */
+    bottom: 0.4rem; /* 4px => 0.4 * 10px */
+    background-color: white;
+    transition: .4s;
+  }
+  
+  /* Wenn der Switch aktiviert ist */
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  
+  /* Der Kreis bewegt sich nach rechts, wenn aktiviert */
+  input:checked + .slider:before {
+    transform: translateX(2.6rem); /* 26px => 2.6 * 10px */
+  }
+  
+  /* Runde Form für den Switch */
+  .slider.round {
+    border-radius: 3.4rem; /* 34px => 3.4 * 10px */
+  }
+  
+  .slider.round:before {
+    border-radius: 100%;
+  }
+
+    /* Toggle Switch-Ende */
