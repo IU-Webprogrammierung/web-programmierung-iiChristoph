@@ -7,7 +7,7 @@ Dieses Projekt wird ihm Rahmen des Creative Labs der IU Internationalen Hochschu
 - **HTML**
 - **CSS** (Bisher nur um DIVs sichtbar zu machen)
 
-## Verzeichnisstruktur
+## 📑 Verzeichnisstruktur
 
     📦 web-programmierung-iiChristoph
     ┣ 📁 images
@@ -38,12 +38,10 @@ Dieses Projekt wird ihm Rahmen des Creative Labs der IU Internationalen Hochschu
 
 ## Phase 1 - Zusammenfassung
 
-In der ersten Phase habe ich mir die Werkzeuge und Tools eingerichtet, um effizient entwickeln zu können. Da ich ein wenig Hintergrundwissen in der Webentwicklung habe, ist mir das Zurechtkommen mit den Technologien und der Software nicht schwergefallen. Ich habe bereits in der Vergangenheit als Hobbyprojekt eine Portfolio-Webseite erstellt, die viele Anforderungen bereits abdeckt. Da dies jedoch schon eine lange Zeit her ist und ich selbst wieder etwas fitter werden möchte, versuche ich, das Projekt neu aufzusetzen.
+Meine Portfoliowebsite ist ein One-Pager, der meine Skills, Hobbys, Projekte und meinen Werdegang zeigt. In der ersten Phase habe ich die nötigen Tools und Werkzeuge eingerichtet, um effizient zu entwickeln. Durch mein Vorwissen in der Webentwicklung ging das Handling der Technologien recht einfach. Schon früher habe ich eine Portfolio-Seite als Hobbyprojekt erstellt, die viele Anforderungen abdeckt. Da dies jedoch schon eine Weile her ist, möchte ich das Projekt neu aufsetzen.
 
-Ich habe mich, wie in der ersten Phase erwünscht, primär auf HTML und Barrierefreiheit-Tags konzentriert. Wie die Webseite aufgebaut sein soll und wie der Breakpoint gesetzt ist, habe ich in der PDF mit dem Konzept aufgezeigt. Je nach Aufwand werde ich einen dritten Breakpoint hinzufügen. Ich habe die meiste Zeit auf einem develop-Branch gearbeitet und diesen am Ende der Phase gemerged.
+Ich habe mich wie in Phase 1 vorhergesehen auf HTML und Barrierefreiheit konzentriert. Das Layout und die Breakpoints sind im Konzept in der PDF beschrieben. Die meiste Arbeit lief auf einem Develop-Branch, der später gemerged wurde. Die CSS habe ich nur in der Hinsicht angepasst, um meine DIVs zu visualisieren.
 
-Ich hoffe, der Umfang der Seite passt bislang, da ich mich für einen One-Pager entschieden habe. Des Weiteren habe ich hier in der README ein wenig dokumentiert und werde dies weiter fortführen. Bisher habe ich die Seite mit Lighthouse getestet und 95 % erreicht. Das Testen macht aber wahrscheinlich mehr Sinn, wenn die Seite auch fertig gestylt ist.
-
-Da eine Impressum-Seite Pflicht ist, habe ich eine erstellt. Die Inhalte, die eine übliche Impressum-Seite enthalten sollte, habe ich fiktiv generieren lassen. Ich hoffe, das ist so in Ordnung.
+Das Konzept und die Beschreibung der Breakpoints habe ich der PDF angehängt und ich habe die README bereits mit wichtigen Infos ergänzt. Erste Lighthouse-Tests brachten 95 %, aber die Tests mache ich wahrscheinlich genauer, wenn das Design final steht. Die Impressum-Seite habe ich auch erstellt, mit fiktiven Inhalten, wie es rechtlich notwendig ist.
 
 Ich bedanke mich schon einmal vorab für das Feedback! 😀
