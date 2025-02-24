@@ -6,7 +6,7 @@
 }
 
 html{
-    font-size: 10px;
+    font-size: 10px; /*root element*/
     font-family: 'Roboto', sans-serif;
     color: #000000;
 }
@@ -39,6 +39,14 @@ img{
 }
 li{
   display: flex;
+  
+}
+
+nav{
+  position: fixed;
+  width: 100%;
+  background-color: #ece7e7;
+  z-index: 100;
 }
 
 header{
@@ -54,6 +62,9 @@ header{
   position: relative;
 }
 
+.skip-link{
+  font-size: 1.3rem;
+}
 
 .landing-pg-text{
     position: absolute;
@@ -105,10 +116,6 @@ nav {
     display: block; /* Damit das Padding auf den gesamten Link angewendet wird */
   }
   
-  /* Hover-Effekt für die Links */
-  .nav-list a:hover {
-    background-color: #00ff95; /* Hintergrundfarbe beim Hover */
-  }
 
   .switch {
     position: relative;
@@ -183,23 +190,43 @@ nav {
 }
 
 .aboutme-heading h1{
-  font-size: 10rem;
-  opacity: .3;
+  font-size: 3rem;
+  opacity: .4;
 }
 
-.aboutme-heading h6{
-  font-size: 2rem;
-  font-weight:300;
-
-}
-
-.profile-img{
-  border-radius: 50%;
+.aboutme-details{
   flex:1;
-  margin-right: 5rem;
-  
+}
+
+.aboutme-desc{
+line-height: 3rem;
 }
 
 #profile-img{
   border-radius: 5%;
+  flex:1;
+  margin-right: 5rem;
+  width: 50rem;
+}
+
+.social-media{
+  margin-top: 5rem;
+}
+
+.social-media i{
+  font-size: 5rem;
+  transition: color 650ms;
+}
+
+.fa-pinterest-square:hover{
+  color: #c70000;
+}
+
+.fa-behance-square:hover{
+  color: #001fd1;
+}
+
+.fa-instagram-square:hover{
+ color: #C13584
+
 }
