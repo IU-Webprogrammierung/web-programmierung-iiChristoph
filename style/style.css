@@ -21,6 +21,7 @@ body{
 
 section{
     padding: 6rem 0;
+    margin-bottom: 10rem;
 }
 
 a{
@@ -31,6 +32,7 @@ a{
 p{
     font-size: 1.8rem;
     font-weight: 300;
+    line-height: 3rem;
 
 }
 
@@ -61,6 +63,8 @@ header{
   margin: 0 auto;
   position: relative;
 }
+
+
 
 .skip-link{
   font-size: 1.3rem;
@@ -229,4 +233,61 @@ line-height: 3rem;
 .fa-instagram-square:hover{
  color: #C13584
 
+}
+
+
+.section-heading h2{
+ margin-bottom: 10rem;
+ text-align: center;
+}
+
+.section-heading h1{
+  font-size: 3rem;
+  color: #000000;
+  text-transform: uppercase;
+  position: relative;
+  margin-bottom: 1rem;
+  text-align: center;
+  opacity: .4;
+}
+
+/*hobbies*/
+.meine-hobbies{
+  margin-top: 10rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem,1fr));
+  grid-gap:2.5rem;
+  text-align: center;
+}
+
+.hobby{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.hobby h1{
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.icon-container{
+  width: 10rem;
+  height: 10rem;
+  border: 0.3rem solid #000000;
+  background-color: #ffffff;
+  margin-bottom: 3rem;
+  display: flex;
+  transform: rotate(45deg);
+}
+
+.icon-container i{
+  color: #000000;
+  font-size: 5rem;
+  margin:auto;
+  transform: rotate(-45deg);
 }
