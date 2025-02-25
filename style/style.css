@@ -64,6 +64,10 @@ header{
   position: relative;
 }
 
+.has-margin-right{
+  margin-right: 5rem;
+}
+
 
 
 .skip-link{
@@ -195,7 +199,6 @@ nav {
 
 .aboutme-heading h1{
   font-size: 3rem;
-  opacity: .4;
 }
 
 .aboutme-details{
@@ -248,7 +251,6 @@ line-height: 3rem;
   position: relative;
   margin-bottom: 1rem;
   text-align: center;
-  opacity: .4;
 }
 
 /*hobbies*/
@@ -291,3 +293,53 @@ line-height: 3rem;
   margin:auto;
   transform: rotate(-45deg);
 }
+
+/*projects*/
+.project-item{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10rem;
+
+}
+
+.project-item:last-child{
+  margin-bottom: 0;
+}
+
+.project-img{
+  width: 50rem;
+  flex: 1;
+}
+
+.project-description{
+  flex:1;
+}
+
+.project-description h2{
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 300;
+  opacity: 0.6;
+
+}
+
+.project-description h1{
+  font-size: 3rem;
+  font-weight: 300;
+  margin: 1rem 0;
+}
+
+.project-description .cta{
+  display: inline-block;
+  margin-top: 2.5rem;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  color: #3883ff;
+  transition: color 650ms;
+}
+
+.project-description .cta:hover{
+  color: #2f67cd;
+}
+/*End portfolio*/

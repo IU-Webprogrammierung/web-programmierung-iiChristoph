@@ -32,7 +32,7 @@ Semester: Wintersemester 24/25
         <li><a href="#contact">Kontaktier mich</a></li>
         <li>
           <p>Dunkelmodus</p>
-          <label class="switch">
+          <label class="switch">.
             <input type="checkbox" aria-label="Dunkelmodus umschalten" />
             <span class="slider round"></span>
           </label>
@@ -48,14 +48,14 @@ Semester: Wintersemester 24/25
     </div>
   </header>
 
-  <section class="aboutme" id="aboutme" aria-labelledby="aboutme">
+  <section class="aboutme" aria-labelledby="aboutme">
     <div class="container">
       <img src="images/profile.jpg" id="profile-img" alt="Profilbild Christoph" />
       <div class="aboutme-details">
         <div class="aboutme-heading">
           <h1 id="main-content">Über mich</h1>
         </div>
-        <p class="aboutme-desc">
+        <p class="aboutme-desc" id="aboutme">
           Ich heiße Christoph und studiere berufsbegleitend User Experience
           Design. Während meiner Teilnahme an verschiedenen Creative Labs
           konnte ich mir neue Skills aneignen und mich stetig
@@ -91,10 +91,10 @@ Semester: Wintersemester 24/25
   </section>
   <!--Profilbereich-Ende-->
   <!--Dienstleistungen-->
-  <section class="hobbies" id="hobbies" aria-labelledby="hobbies">
+  <section class="hobbies"  aria-labelledby="hobbies">
     <div class="container">
       <div class="section-heading">
-        <h1>Hobbies</h1>
+        <h1 id="hobbies">Hobbies</h1>
         <h2>Das macht mich aus.</h2>
       </div>
       <div class="meine-hobbies">
@@ -153,18 +153,18 @@ Semester: Wintersemester 24/25
     </div>
   </section>
   <!--Dienstleistungen-Ende-->
-  <!--Portfolio-->
-  <section class="projects" id="projects" aria-labelledby="projects">
+  <!--project-->
+  <section class="project" aria-labelledby="project">
     <div class="container">
       <div class="section-heading">
-        <h1>Portfolio</h1>
+        <h1 id="project">Portfolio</h1>
         <h2>Meine bisherigen Arbeiten</h2>
       </div>
-      <div class="portfolio-item">
-        <div class="portfolio-img has-margin-right">
+      <div class="project-item">
+        <div class="project-img has-margin-right">
           <img src="images/portfolioitem_1.jpg" alt="Bild Webdesign Projekt" />
         </div>
-        <div>
+        <div class="project-description">
           <h2>Design Konzept</h2>
           <h1>Webdesign Island Reise</h1>
           <p>
@@ -181,9 +181,9 @@ Semester: Wintersemester 24/25
           </p>
         </div>
       </div>
-      <div>
-        <div>
-          <h6>Mobile Design</h6>
+      <div class="project-item">
+        <div class="project-description has-margin-right">
+          <h2>Mobile Design</h2>
           <h1>Motorrad App "Ride with me"</h1>
           <p>
             Im Rahmen eines Hochschulprojekts habe ich ein Designkonzept für
@@ -202,17 +202,16 @@ Semester: Wintersemester 24/25
             Nutzern.
           </p>
         </div>
-
-        <div>
+        <div class="project-img">
           <img src="images/portfolioitem_2.jpg" alt="Bild Mobile Design Projekt" />
         </div>
       </div>
-      <div>
-        <div>
+      <div class="project-item">
+        <div class="project-img has-margin-right">
           <img src="images/portfolioitem_3.jpg" alt="Bild Unternehmenssoftware Projekt" />
         </div>
-        <div>
-          <h6>Unternehmenssoftware Design</h6>
+        <div class="project-description">
+          <h2>Unternehmenssoftware Design</h2>
           <h1>Torpedo Motorenmanagement</h1>
           <p>
             ich ein Designkonzept für eine Unternehmenssoftware entwickelt,
@@ -237,14 +236,14 @@ Semester: Wintersemester 24/25
       </div>
     </div>
   </section>
-  <!--Portfolio-Ende-->
+  <!--project-Ende-->
   <!--Lebenslauf-->
 
-  <section class="cv" id="cv" aria-labelledby="cv">
+  <section class="cv" id="cv" aria-labelledby="lebenslauf">
     <div>
       <div>
-        <h1>Lebenslauf</h1>
-        <h6>Schulisch, beruflich und Stipendien</h6>
+        <h1 id="lebenslauf">Lebenslauf</h1>
+        <h2>Schulisch, beruflich und Stipendien</h2>
       </div>
       <div>
         <ul>
@@ -287,10 +286,10 @@ Semester: Wintersemester 24/25
   <!--Lebenslauf-Ende-->
   <!--Zitate-->
 
-  <section class="quotes" id="quotes" aria-labelledby="quotes">
+  <section class="quotes" aria-labelledby="quotes">
     <div>
       <div>
-        <h3>Zitate</h3>
+        <h1 id="quotes">Zitate</h1>
       </div>
       <blockquote>
         <p>
@@ -311,13 +310,13 @@ Semester: Wintersemester 24/25
   </section>
   <!--Zitate-Ende-->
   <!--Kontakt-->
-  <section class="contact" id="contact" aria-labelledby="contact">
+  <section class="contact" aria-labelledby="contact">
     <div class="container">
       <div class="section-heading">
-        <h1>Kontaktier mich</h1>
-        <h6>Lass uns zusammenarbeiten</h6>
+        <h1 id="contact">Kontaktier mich</h1>
+        <h2>Lass uns zusammenarbeiten</h2>
       </div>
-      <form action="">
+      <form action="" aria-labelledby="contact">
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" placeholder="Name eingeben..." required aria-required="true" />
         <label for="email">Email:</label>
