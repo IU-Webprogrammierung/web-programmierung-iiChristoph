@@ -68,6 +68,12 @@ header{
   height: 100vh;
 }
 
+.imp-header{
+  width: 10%;
+  height: 10vh;
+}
+
+
 .container{
   width: 90%;
   max-width: 120rem;
@@ -75,6 +81,7 @@ header{
   margin: 0 auto;
   position: relative;
 }
+
 
 .has-margin-right{
   margin-right: 5rem;
@@ -442,4 +449,39 @@ line-height: 3rem;
 
 .quote-card p {
   margin: 0;
+}
+
+/* contact */
+.contact{
+  background-color: #eee;
+}
+
+form{
+  width: 70%;
+  margin: 0 auto;
+}
+
+form label{
+  font-size: 1.5rem;
+}
+
+input,select,textarea{
+  width: 100%;
+  padding:1rem;
+  margin-bottom: 2rem;
+  border:none;
+  outline-color: #23cdf8;
+}
+
+input[type="submit"]{
+  width: initial; /*Setzt den Wert auf Auto zurück ohne sich der Box zu orientieren*/
+  background-color: #23cdf8;
+  color: #000000;
+  padding: 1rem 2rem;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover{
+  color: #000000;
+  background-color: #0aa7ce;
 }
