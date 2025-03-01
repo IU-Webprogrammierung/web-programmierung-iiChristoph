@@ -15,7 +15,7 @@ Semester: Wintersemester 24/25
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Christoph Birtsis</title>
 
-  <link rel="stylesheet" href="style/style.css" />
+  <link rel="stylesheet" id="themeStyle" href="style/style-light.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 </head>
 
@@ -33,7 +33,7 @@ Semester: Wintersemester 24/25
         <li>
           <p>Theme</p>
           <label class="switch">.
-            <input type="checkbox" aria-label="Dunkelmodus umschalten" />
+            <input type="checkbox" id="themeToggle" aria-label="Dunkelmodus umschalten" />
             <span class="slider round"></span>
           </label>
         </li>
@@ -339,7 +339,7 @@ Semester: Wintersemester 24/25
   <!--Footer-->
 
   <footer class="copyright">
-    <div class="up" id="up">
+    <div class="up" id="up" role="button" aria-label="Nach oben scrollen">
       <i class="fas fa-chevron-up" aria-hidden="true"></i>
     </div>
     <p>&copy; 2025 Christoph Birtsis</p>
@@ -347,6 +347,7 @@ Semester: Wintersemester 24/25
   </footer>
   <!--Footer-Ende-->
   <script src="js/main.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </body>
 
 </html>

@@ -26,5 +26,22 @@ document.addEventListener('DOMContentLoaded', function () {
         hamburger.innerHTML = '&#9776;'; // Hamburger-Symbol zurücksetzen
       }
     });
+
+$('#up').on('click',function(){
+      $('html, body').animate({
+          scrollTop: 0
+      }, 800);
+  });
+
+const toggleSwitch = document.getElementById("themeToggle");
+const themeStylesheet = document.getElementById("themeStyle");
+
+toggleSwitch.addEventListener("change", () => {
+  if (toggleSwitch.checked) {
+    themeStylesheet.href = "style/style-dark.css";
+  } else {
+    themeStylesheet.href = "style/style-light.css";
+  }
+});
   });
   
