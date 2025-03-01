@@ -26,10 +26,9 @@
   } 
   
   body{
-    background-color: #000000;
       width: auto;
       height: 100%;
-      background:url("/images/dark-bg.jpeg") no-repeat center fixed;
+      background:url("../images/dark-bg.jpeg") no-repeat center fixed;
       background-size: cover;
       color: var(--text-color);
       
