@@ -142,6 +142,16 @@ nav {
     padding: 10px 15px; /* Padding für etwas Abstand rund um den Text */
     display: block; /* Damit das Padding auf den gesamten Link angewendet wird */
   }
+
+  /* Hamburger-Button verstecken und beim kleinen Bildschirm anzeigen */
+.hamburger {
+  display: none; /* Standardmäßig unsichtbar */
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: black;
+  cursor: pointer;
+}
   
 
   .switch {
@@ -484,4 +494,37 @@ input[type="submit"]{
 input[type="submit"]:hover{
   color: #000000;
   background-color: #0aa7ce;
+}
+
+/*menu*/
+
+
+@media screen and (max-width: 900px){
+  .nav-list {
+    display: none; /* Menü verbergen */
+    flex-direction: column; /* Listenelemente untereinander anzeigen */
+    width: 100%; /* Volle Breite */
+    transition: max-height 0.3s ease-in-out;
+    background-color: #fff; /* Hintergrundfarbe des Menüs */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0; /* Menü breitet sich über die ganze Breite aus */
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /*Menüschatten */
+  }
+
+  .nav-list.show {
+    display: flex; /* Menü anzeigen */
+  }
+
+  .hamburger {
+    display: block; /* Hamburger-Button sichtbar */
+    margin-left: 2rem;
+  }
+
+  .nav-list li {
+    margin: 1rem 0; /* Abstand zwischen den Listenelementen */
+  }
+
 }
