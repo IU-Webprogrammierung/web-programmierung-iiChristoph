@@ -22,6 +22,7 @@ body{
 section{
     padding: 6rem 0;
     margin-bottom: 10rem;
+    margin-top: 10rem;
 }
 
 a{
@@ -129,10 +130,7 @@ nav {
     list-style: none; /* Entfernt die Aufzählungszeichen */
   }
   
-  /* Styling für die Listenelemente */
-  .nav-list li {
-    margin: 0 20px; /* Optionaler Abstand zwischen den einzelnen Listenelementen */
-  }
+
   
   /* Styling für die Links */
   .nav-list a {
@@ -529,7 +527,7 @@ input[type="submit"]:hover{
 
 
 
-@media screen and (max-width: 900px){
+@media screen and (max-width: 768px){
   .nav-list {
     display: none; /* Menü verbergen */
     flex-direction: column; /* Listenelemente untereinander anzeigen */
