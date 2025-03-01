@@ -596,6 +596,10 @@
   .aboutme-heading{
     text-align: center;
   }
+
+  #profile-img{
+    margin: 0 auto;
+  }
   
   .project-item {
     display: flex;
