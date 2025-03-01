@@ -13,6 +13,7 @@ Semester: Wintersemester 24/25
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfoliowebsite für ein Hochschulprojekts.">
   <title>Christoph Birtsis</title>
 
   <link rel="stylesheet" id="themeStyle" href="style/style-light.css" />
@@ -29,13 +30,14 @@ Semester: Wintersemester 24/25
       <ul class="nav-list">
         <li><a href="index.html">Home</a></li>
         <li><a href="#aboutme">Über mich</a></li>
+        <li><a href="#project">Projekte</a></li>
         <li><a href="#hobbies">Hobbies</a></li>
         <li><a href="#cv">Lebenslauf</a></li>
         <li><a href="#quotes">Zitate</a></li>
         <li><a href="#contact">Kontaktier mich</a></li>
         <li>
           <p>Theme</p>
-          <label class="switch">.
+          <label class="switch">
             <input type="checkbox" id="themeToggle" aria-label="Dunkelmodus umschalten" />
             <span class="slider round"></span>
           </label>
@@ -51,7 +53,7 @@ Semester: Wintersemester 24/25
     </div>
   </header>
 
-  <section class="aboutme" aria-labelledby="aboutme" id="aboutme">
+  <section class="aboutme" aria-labelledby="main-content" id="aboutme">
     <div class="container">
       <img src="images/profile-new.png" id="profile-img" alt="Profilbild Christoph" />
       <div class="aboutme-details">
@@ -94,10 +96,10 @@ Semester: Wintersemester 24/25
   </section>
   <!--Profilbereich-Ende-->
   <!--Dienstleistungen-->
-  <section aria-labelledby="hobbies" id="hobbies">
+  <section aria-labelledby="hobbyref" id="hobbies">
     <div class="container">
       <div class="section-heading">
-        <h1>Hobbies</h1>
+        <h1 id="hobbyref">Hobbies</h1>
         <h2>Das macht mich aus.</h2>
       </div>
       <div class="meine-hobbies">
@@ -157,10 +159,10 @@ Semester: Wintersemester 24/25
   </section>
   <!--Dienstleistungen-Ende-->
   <!--project-->
-  <section class="project" aria-labelledby="project" id="project">
+  <section class="project" aria-labelledby="arbeiten" id="project">
     <div class="container">
       <div class="section-heading">
-        <h1>Portfolio</h1>
+        <h1 id="arbeiten">Portfolio</h1>
         <h2>Meine bisherigen Arbeiten</h2>
       </div>
       <div class="project-item">
@@ -242,10 +244,10 @@ Semester: Wintersemester 24/25
   <!--project-Ende-->
   <!--Lebenslauf-->
 
-  <section id="cv" aria-labelledby="lebenslauf" id="lebenslauf">
+  <section id="cv" aria-labelledby="lebenslauf">
     <div class="container">
       <div class="section-heading">
-        <h1>Lebenslauf</h1>
+        <h1 id="lebenslauf">Lebenslauf</h1>
         <h2>Schule, Karriere und Stipendien</h2>
       </div>
       <div class="timeline">
@@ -288,9 +290,9 @@ Semester: Wintersemester 24/25
   <!--Lebenslauf-Ende-->
   <!--Zitate-->
 
-  <section class="quotes" aria-labelledby="quotes" id="quotes">
+  <section class="quotes" aria-labelledby="quoteHeading" id="quotes">
     <div class="section-heading">
-      <h1>Zitate</h1>
+      <h1 id="quoteHeading">Zitate</h1>
       <h2>Schule, Karriere und Stipendien</h2>
     </div>
     <div class="quote-container">
@@ -313,18 +315,17 @@ Semester: Wintersemester 24/25
   </section>
   <!--Zitate-Ende-->
   <!--Kontakt-->
-  <section class="contact" aria-labelledby="contact" id="contact">
+  <section class="contact" aria-labelledby="kontaktiermich" id="contact">
     <div class="container">
       <div class="section-heading">
-        <h1>Kontaktier mich</h1>
+        <h1 id="kontaktiermich">Kontaktier mich</h1>
         <h2>Lass uns zusammenarbeiten</h2>
       </div>
-      <form action="" aria-labelledby="contact">
+      <form action="" aria-labelledby="kontaktiermich">
         <label for="name">Name:</label>
-        <input type="text" id="name" name="name" placeholder="Name eingeben..." required aria-required="true" />
+        <input type="text" id="name" name="name" placeholder="Name eingeben..." required />
         <label for="email">Email:</label>
-        <input type="email" id="email" name="email" placeholder="Emailadresse eingeben..." required
-          aria-required="true" />
+        <input type="email" id="email" name="email" placeholder="Emailadresse eingeben..." required />
 
         <label for="service">Leistungen:</label>
         <select name="services" id="service">
@@ -342,7 +343,7 @@ Semester: Wintersemester 24/25
   <!--Footer-->
 
   <footer class="copyright">
-    <div class="up" id="up" role="button" aria-label="Nach oben scrollen">
+    <div class="up" id="up" aria-label="Nach oben scrollen">
       <i class="fas fa-chevron-up" aria-hidden="true"></i>
     </div>
     <p>&copy; 2025 Christoph Birtsis</p>

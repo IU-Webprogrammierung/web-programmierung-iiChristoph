@@ -60,6 +60,7 @@ text-decoration: underline;
 p{
     font-size: 1.8rem;
     font-weight: 300;
+    line-height: 3rem;
 
 }
 
@@ -584,5 +585,55 @@ p{
   margin: 0 0 0 auto;
 }
 
+
+}
+
+@media screen and (max-width: 600px){
+
+.aboutme .container{
+    flex-direction: column;
+}
+
+.aboutme-heading{
+  text-align: center;
+}
+
+.project-item {
+  display: flex;
+  flex-direction: column; /* Elemente untereinander anordnen */
+  align-items: center; /* Alle Inhalte horizontal zentrieren */
+  text-align: left;
+  margin-bottom: 20rem;
+}
+
+.project-item p{
+  margin-bottom: 4rem;
+}
+
+.project-img.has-margin-right{
+  order: 1;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto; /* Damit das Bild mittig bleibt */
+}
+
+.project-img{
+  order: 2;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto; /* Damit das Bild mittig bleibt */
+}
+
+
+
+form{
+  width: 100%;
+}
+
+input[type="submit"]{
+  width: 100%;
+}
 
 }
