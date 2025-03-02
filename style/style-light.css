@@ -328,15 +328,23 @@ line-height: 3rem;
 }
 
 .icon-container{
-  width: 10rem;
+width: 10rem;
   height: 10rem;
   border: 3px solid var(--action-color);
   background-color: var(--hbby-icon-bg);
   margin-bottom: 3rem;
   display: flex;
-  transform: rotate(45deg);
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%; /* Rundes Icon */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Weicher Schatten */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Sanfte Übergänge für Interaktionen */
 }
 
+.icon-container:hover {
+  transform: rotate(180deg); /* Drehung beim Hover */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Verstärkter Schatten beim Hover */
+}
 .icon-container i{
   font-size: 5rem;
   margin:auto;
@@ -600,6 +608,7 @@ p{
 
 #profile-img{
   margin: 0 auto;
+  width: 80%;
 }
 
 .project-item {

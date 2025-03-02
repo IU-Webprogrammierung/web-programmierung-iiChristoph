@@ -20,6 +20,21 @@ Dieses Projekt wird ihm Rahmen des Creative Labs der IU Internationalen Hochschu
     ┣ 📄 README.md
     ┗ 📄 .gitignore
 
+## 📱 Responsives Design
+
+Dieses Projekt verwendet zwei Breakpoints für das responsive Design:
+
+- **768px** Anpassungen für Tablets und mittelgroße Bildschirme
+- **600px** Optimierungen für Smartphones
+
+## 🌈 Themes
+
+Die Website verfügt über einen Dark- und Lightmode. Bei der Umsetzung wurden zwei CSS Dateien erstellt, die über einen Toggle-Switch ausgetauscht werden. Standardmäßgig wird das Light-Theme verwendet.
+
+- 🌞 style-light.css
+- 🌑 style-dark.css
+
+
 ## ☑️ Anforderungen des Projekts
 
 - Responsives Design (Nutzung von Breakpoints)
