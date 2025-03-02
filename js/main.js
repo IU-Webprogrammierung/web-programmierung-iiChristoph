@@ -33,6 +33,14 @@ $('#up').on('click',function(){
       }, 800);
   });
 
+$('#up').on('keydown', function(event) {
+  if (event.key === 'Enter' || event.key === ' ') {  // 'Enter' oder 'Leertaste' wird geprüft
+    $('html, body').animate({
+      scrollTop: 0
+    }, 800);
+  }
+});
+
 const toggleSwitch = document.getElementById("themeToggle");
 const themeStylesheet = document.getElementById("themeStyle");
 

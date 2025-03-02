@@ -175,6 +175,7 @@ nav {
   
   /* Toggle Switch */
   .switch input {
+    display: block; /*Damit es für die Tastatur auswähölbar ist*/ 
     opacity: 0;
     width: 0;
     height: 0;
@@ -523,7 +524,7 @@ input[type="submit"]:hover{
   width: 5rem;
   height: 5rem;
   background-color: var(--action-color);
-  top:-2.5rem;
+  top: -2.5rem;
   right: 5rem;
   border-radius: 100%;
   display: flex;
