@@ -8,6 +8,12 @@ Dieses Projekt wird ihm Rahmen des Creative Labs der IU Internationalen Hochschu
 - **CSS**
 - **JavaScript**
 
+## 🗿 Barrierefreiheit
+
+Für die Barrierefreheit wurde weitgehend **rem** verwendet, es wurde ein Theme-Toggle implementiert, zudem wurde sichergestellt, das mit der Tastatur navigiert werden kann.
+Es wurde mit auch mit **aria-labels** gearbeitet.
+
+Die Barrierefreiheit wurde mit dem in den Entwicklertools verfügbarem Lighthouse-Analysetool evaluiert, das Ergebnis bezog sich auf 97%.
 
 ## 📑 Verzeichnisstruktur
 
