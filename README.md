@@ -39,7 +39,6 @@ Die Website verfügt über einen Dark- und Lightmode. Bei der Umsetzung wurden e
 
 - 🌞 🌑 style.css
 
-
 ## ☑️ Anforderungen des Projekts
 
 - Responsives Design (Nutzung von Breakpoints)
@@ -58,3 +57,14 @@ Die Website verfügt über einen Dark- und Lightmode. Bei der Umsetzung wurden e
 ```
 
 2. Projektordner in VSCode öffnen und über ein Liveserver-Plugin starten
+
+## Abstract Phase 2
+
+In dieser Phase habe ich versucht, mein Konzept umzusetzen und mich weiter in die Barrierefreiheit vertieft. Ich habe neue Erkenntnisse gewonnen und versucht, meinen Code beispielsweise über CSS-Variablen zu optimieren und pflegeleichter zu gestalten. Die Seite funktioniert mit den implementierten Features soweit wie vorgesehen. In Lighthouse erreiche ich bei der Barrierefreiheit 97 % und bei den Best Practices 100 %.
+
+Ich habe auf dem CSS-Styling-Branch gearbeitet und diesen am Ende in den Master-Branch gemergt.
+
+Ich hoffe, die Seite passt vom Umfang her soweit. In der letzten Phase möchte ich den bestehenden Code weiterhin optimieren und verbessern.
+
+Link zur GitHub Page: https://iu-webprogrammierung.github.io/web-programmierung-iiChristoph/
+Zum Repository: https://github.com/IU-Webprogrammierung/web-programmierung-iiChristoph/tree/master
