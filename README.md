@@ -29,10 +29,9 @@ Dieses Projekt verwendet zwei Breakpoints für das responsive Design:
 
 ## 🌈 Themes
 
-Die Website verfügt über einen Dark- und Lightmode. Bei der Umsetzung wurden zwei CSS Dateien erstellt, die über einen Toggle-Switch ausgetauscht werden. Standardmäßgig wird das Light-Theme verwendet.
+Die Website verfügt über einen Dark- und Lightmode. Bei der Umsetzung wurden erst zwei CSS Dateien erstellt, die über einen Toggle-Switch ausgetauscht werden. Jetzt wird aber nur eine CSS verwendet, bei der einfach die Farbvariablen ausgetauscht werden. Diese Änderung sorgt dafür das man keinen doppelten Code hat und nichts doppelt ändern muss. Zudem wurde noch programmiert, das das letzte Theme im Cache gespeichert wird und sich nicht beim Reload zurücksetzt.
 
-- 🌞 style-light.css
-- 🌑 style-dark.css
+- 🌞 🌑 style.css
 
 
 ## ☑️ Anforderungen des Projekts

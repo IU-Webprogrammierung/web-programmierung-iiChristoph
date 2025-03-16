@@ -42,14 +42,16 @@ $('#up').on('keydown', function(event) {
 });
 
 const toggleSwitch = document.getElementById("themeToggle");
-const themeStylesheet = document.getElementById("themeStyle");
+
+// Zustand aus localStorage holen
+if (localStorage.getItem("theme") === "dark") {
+  document.body.classList.add("dark-mode");
+  toggleSwitch.checked = true;
+}
 
 toggleSwitch.addEventListener("change", () => {
-  if (toggleSwitch.checked) {
-    themeStylesheet.href = "style/style-dark.css";
-  } else {
-    themeStylesheet.href = "style/style-light.css";
-  }
+  document.body.classList.toggle("dark-mode", toggleSwitch.checked);
+  localStorage.setItem("theme", toggleSwitch.checked ? "dark" : "light");
 });
   });
   
