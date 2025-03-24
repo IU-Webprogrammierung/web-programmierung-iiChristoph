@@ -79,6 +79,10 @@ img {
   margin-right: 2rem;
 }
 
+.nav-list a:hover{
+  color: var(--action-color);
+}
+
 .nav-list li {
   display: flex;
   align-items: center;
@@ -590,9 +594,13 @@ input[type="submit"]:hover {
     font-size: 1.4rem;
   }
 
-  .timeline ul {
-    margin: 0 0 0 auto;
+ 
+
+
+  .timeline h1{
+font-size: 1.8rem;
   }
+  
 }
 
 @media screen and (max-width: 600px) {
@@ -637,6 +645,24 @@ input[type="submit"]:hover {
     margin: 0 auto; /* Damit das Bild mittig bleibt */
   }
 
+  .timeline ul {
+    width: 95%;
+  }
+
+  .date::before {
+    content: attr(data-date);
+    position: relative !important;
+    display: block !important;
+    left: auto !important;
+    top: auto !important;
+    transform: none !important;
+    text-align: left !important;
+    margin-top: 0.25rem;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    color: var(--action-color);
+  }
+
   form {
     width: 100%;
   }
@@ -644,4 +670,5 @@ input[type="submit"]:hover {
   input[type="submit"] {
     width: 100%;
   }
+
 }

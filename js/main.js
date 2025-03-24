@@ -53,5 +53,11 @@ toggleSwitch.addEventListener("change", () => {
   document.body.classList.toggle("dark-mode", toggleSwitch.checked);
   localStorage.setItem("theme", toggleSwitch.checked ? "dark" : "light");
 });
+
+window.addEventListener('DOMContentLoaded', function () {
+  const skipLink = document.querySelector('.skip-link');
+  skipLink.setAttribute('tabindex', '0'); // optional, falls nötig
+  skipLink.focus(); // setzt den Fokus sofort
+});
   });
   
