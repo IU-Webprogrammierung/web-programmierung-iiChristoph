@@ -1,63 +1,88 @@
+let vantaEffect = null;
+
 document.addEventListener('DOMContentLoaded', function () {
-    const hamburger = document.querySelector('.hamburger');
-    const navList = document.querySelector('.nav-list');
-    const navItems = document.querySelectorAll('.nav-list li'); // Alle Listenelemente holen
-    
-    // Event-Listener für den Hamburger-Button
-    hamburger.addEventListener('click', (event) => {
-      // Menü ein- oder ausblenden
-      navList.classList.toggle('show');
-      
-      // Verhindern, dass das Click-Event auf das Dokument weitergegeben wird
-      event.stopPropagation();
-    });
-  
-    // Event-Listener für jedes Listenelement
-    navItems.forEach(item => {
-      item.addEventListener('click', () => {
-        navList.classList.remove('show'); // Menü schließen
-      });
-    });
-  
-    // Event-Listener für Klick außerhalb des Menüs (Schließt das Menü)
-    document.addEventListener('click', (event) => {
-      if (!navList.contains(event.target) && !hamburger.contains(event.target)) {
-        navList.classList.remove('show'); // Menü schließen
-        hamburger.innerHTML = '&#9776;'; // Hamburger-Symbol zurücksetzen
-      }
-    });
+  const hamburger = document.querySelector('.hamburger');
+  const navList = document.querySelector('.nav-list');
+  const navItems = document.querySelectorAll('.nav-list li');
+  const toggleSwitch = document.getElementById("themeToggle");
 
-$('#up').on('click',function(){
-      $('html, body').animate({
-          scrollTop: 0
-      }, 800);
-  });
-
-$('#up').on('keydown', function(event) {
-  if (event.key === 'Enter' || event.key === ' ') {  // 'Enter' oder 'Leertaste' wird geprüft
-    $('html, body').animate({
-      scrollTop: 0
-    }, 800);
+  // Dark Mode Zustand aus localStorage
+  const isDarkMode = localStorage.getItem("theme") === "dark";
+  if (isDarkMode) {
+    document.body.classList.add("dark-mode");
+    toggleSwitch.checked = true;
   }
-});
 
-const toggleSwitch = document.getElementById("themeToggle");
+  // VANTA initialisieren
+  if (typeof VANTA !== "undefined" && typeof THREE !== "undefined") {
+    vantaEffect = VANTA.WAVES({
+      el: ".vanta-bg",
+      mouseControls: true,
+      touchControls: true,
+      gyroControls: false,
+      minHeight: 200.00,
+      minWidth: 200.00,
+      scale: 1.00,
+      scaleMobile: 1.00,
+      zoom: 0.84,
+      color: isDarkMode ? "#000000" : "#a2a2a2"
+    });
+  }
 
-// Zustand aus localStorage holen
-if (localStorage.getItem("theme") === "dark") {
-  document.body.classList.add("dark-mode");
-  toggleSwitch.checked = true;
-}
+  // Toggle-Switch Event
+  toggleSwitch.addEventListener("change", () => {
+    const darkNow = toggleSwitch.checked;
+    document.body.classList.toggle("dark-mode", darkNow);
+    localStorage.setItem("theme", darkNow ? "dark" : "light");
 
-toggleSwitch.addEventListener("change", () => {
-  document.body.classList.toggle("dark-mode", toggleSwitch.checked);
-  localStorage.setItem("theme", toggleSwitch.checked ? "dark" : "light");
-});
+    if (vantaEffect) vantaEffect.destroy();
 
-window.addEventListener('DOMContentLoaded', function () {
-  const skipLink = document.querySelector('.skip-link');
-  skipLink.setAttribute('tabindex', '0'); // optional, falls nötig
-  skipLink.focus(); // setzt den Fokus sofort
-});
+    vantaEffect = VANTA.WAVES({
+      el: ".vanta-bg",
+      mouseControls: true,
+      touchControls: true,
+      gyroControls: false,
+      minHeight: 200.00,
+      minWidth: 200.00,
+      scale: 1.00,
+      scaleMobile: 1.00,
+      zoom: 0.84,
+      color: darkNow ? "#000000" : "#a2a2a2"
+    });
   });
-  
+
+  // Hamburger-Menü
+  hamburger.addEventListener('click', (event) => {
+    navList.classList.toggle('show');
+    event.stopPropagation();
+  });
+
+  navItems.forEach(item => {
+    item.addEventListener('click', () => {
+      navList.classList.remove('show');
+    });
+  });
+
+  document.addEventListener('click', (event) => {
+    if (!navList.contains(event.target) && !hamburger.contains(event.target)) {
+      navList.classList.remove('show');
+      hamburger.innerHTML = '&#9776;';
+    }
+  });
+
+  // Scroll to top
+  $('#up').on('click', function () {
+    $('html, body').animate({ scrollTop: 0 }, 800);
+  });
+
+  $('#up').on('keydown', function (event) {
+    if (event.key === 'Enter' || event.key === ' ') {
+      $('html, body').animate({ scrollTop: 0 }, 800);
+    }
+  });
+
+  // Skip-Link Fokus
+  const skipLink = document.querySelector('.skip-link');
+  skipLink.setAttribute('tabindex', '0');
+  skipLink.focus();
+});
