@@ -8,12 +8,19 @@ Dieses Projekt wird ihm Rahmen des Creative Labs der IU Internationalen Hochschu
 - **CSS**
 - **JavaScript**
 
+## 📚 Verwendete Libraries
+
+- **jQuery**
+- **Vanta.js**
+- **three.js** (Plichtabhängigkeit von Vanta.js)
+
 ## 🗿 Barrierefreiheit
 
-Für die Barrierefreheit wurde weitgehend **rem** verwendet, es wurde ein Theme-Toggle implementiert, zudem wurde sichergestellt, das mit der Tastatur navigiert werden kann.
+Für die Barrierefreheit wurde weitgehend **rem** verwendet, es wurde ein Theme-Toggle implementiert, zudem wurde sichergestellt, das mit der Tastatur navigiert werden kann **tabindex**.
 Es wurde mit auch mit **aria-labels** gearbeitet.
 
-Die Barrierefreiheit wurde mit dem in den Entwicklertools verfügbarem Lighthouse-Analysetool evaluiert, das Ergebnis bezog sich auf 97%.
+Die Barrierefreiheit wurde mit dem in den Entwicklertools verfügbarem Lighthouse-Analysetool evaluiert, das Ergebnis bezog sich auf 100%.
+Auch die SEO sowie Best Practices waren bei 100%. Die Performance wurde nicht evaluiert.
 
 ## 📑 Verzeichnisstruktur
 
@@ -58,13 +65,14 @@ Die Website verfügt über einen Dark- und Lightmode. Bei der Umsetzung wurden e
 
 2. Projektordner in VSCode öffnen und über ein Liveserver-Plugin starten
 
-## Abstract Phase 2
+## Abstract Phase 3
 
-In dieser Phase habe ich versucht, mein Konzept umzusetzen und mich weiter in die Barrierefreiheit vertieft. Ich habe neue Erkenntnisse gewonnen und versucht, meinen Code beispielsweise über CSS-Variablen zu optimieren und pflegeleichter zu gestalten. Die Seite funktioniert mit den implementierten Features soweit wie vorgesehen. In Lighthouse erreiche ich bei der Barrierefreiheit 97 % und bei den Best Practices 100 %.
+In der letzten Phase habe ich das Feedback aus Phase 2 umgesetzt und den Darstellungsfehler im Lebenslauf behoben, des weiteren habe ich die Bilder verkleinert, da diese doch zu groß waren.
+Ich habe mich zudem dafür interessiert wie man 3D-Hintergründe implementiert die auch interaktiv auf die Maus reagieren, dabei bin ich auf Vanta und Three gestoßen, mit diesen Libraries habe ich für den Splashscreen einen Hintergrund implementiert. Für Performance Zwecke ist dieser Hintergrund vielleicht nicht optimal, aber ich wollte es trotzdem als zusätzliches Feature einbauen, das es visuell meiner Meinung nach ganz cool aussieht.
 
-Ich habe auf dem CSS-Styling-Branch gearbeitet und diesen am Ende in den Master-Branch gemergt.
+Des weiteren habe ich mir noch den Code angeschaut und an den gewissen Stellen noch optimiert (verschönert).
 
-Ich hoffe, die Seite passt vom Umfang her soweit. In der letzten Phase möchte ich den bestehenden Code weiterhin optimieren und verbessern.
+
 
 Link zur GitHub Page: https://iu-webprogrammierung.github.io/web-programmierung-iiChristoph/
 Zum Repository: https://github.com/IU-Webprogrammierung/web-programmierung-iiChristoph/tree/master
