@@ -30,6 +30,7 @@ Auch die SEO sowie Best Practices waren bei 100%. Die Performance wurde nicht ev
     ┣ 📁 style
     ┣ 📄 index.html
     ┣ 📄 impressum.html
+    ┣ 📄 quotes.json
     ┣ 📄 README.md
     ┗ 📄 .gitignore
 

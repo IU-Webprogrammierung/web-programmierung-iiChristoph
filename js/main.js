@@ -85,4 +85,27 @@ document.addEventListener('DOMContentLoaded', function () {
   const skipLink = document.querySelector('.skip-link');
   skipLink.setAttribute('tabindex', '0');
   skipLink.focus();
+
+  fetch('../quotes.json')
+  .then(response => response.json())
+  .then(data => {
+    const container = document.getElementById('quoteContainer'); // Daten aus JSON laden und übe quoteContainer in Variable speichern
+
+    data.forEach(quote => {
+      const blockquote = document.createElement('blockquote'); //Schleife zum generieren der Blockquotes mit Klasse quote-card
+      blockquote.classList.add('quote-card');
+
+      const p = document.createElement('p');
+      p.textContent = `“${quote.text}“ – ${quote.author}`; //Text für die Karte aus quote.json in p Tags schreiben
+
+      blockquote.appendChild(p);
+      container.appendChild(blockquote);
+    });
+  })
+  .catch(error => {
+    console.error('Fehler beim Laden der Zitate:', error);
+  });
+
+
+
 });
