@@ -86,7 +86,7 @@ document.addEventListener('DOMContentLoaded', function () {
   skipLink.setAttribute('tabindex', '0');
   skipLink.focus();
 
-  fetch('../quotes.json')
+  fetch('quotes.json')
   .then(response => response.json())
   .then(data => {
     const container = document.getElementById('quoteContainer'); // Daten aus JSON laden und übe quoteContainer in Variable speichern
