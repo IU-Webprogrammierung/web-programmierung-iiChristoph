@@ -19,8 +19,8 @@ Dieses Projekt wird ihm Rahmen des Creative Labs der IU Internationalen Hochschu
 Für die Barrierefreheit wurde weitgehend **rem** verwendet, es wurde ein Theme-Toggle implementiert, zudem wurde sichergestellt, das mit der Tastatur navigiert werden kann **tabindex**.
 Es wurde mit auch mit **aria-labels** gearbeitet.
 
-Die Barrierefreiheit wurde mit dem in den Entwicklertools verfügbarem Lighthouse-Analysetool evaluiert, das Ergebnis bezog sich auf 100%.
-Auch die SEO sowie Best Practices waren bei 100%. Die Performance wurde nicht evaluiert.
+Die Barrierefreiheit wurde mit dem in den Entwicklertools verfügbarem Lighthouse-Analysetool evaluiert, das Ergebnis bezog sich auf **100%**.
+Auch die SEO sowie Best Practices waren bei **100%**. Die Performance wurde nicht evaluiert. Als Browser wurder Google Chrome verwendet.
 
 ## 📑 Verzeichnisstruktur
 
@@ -55,6 +55,16 @@ Die Website verfügt über einen Dark- und Lightmode. Bei der Umsetzung wurden e
 - Mindestens 4 Seiten oder 4 Bereiche im One-Pager
 - Nutzung von Flexbox oder Grid
 - Optional Javascript Features z.B. Animationen
+
+## ✅ Zusätzliche Features
+
+- Theme - Switch für ein Dark- und Light-Mode und die Speicherung des Modes im Cache
+- Dynamischer Splashscreen der auf Bewegungen der Maus reagiert
+- Up-Animation
+- Laden der Zitate über eine ausgelagerte JSON Datei
+- Skip Link für um direkt auf den Content zu kommen
+- Hobby Icon Spin Animationen
+- CSS Variablen für leichtere Anpassung von Code
 
 ## 💽 Installation des Projekts
 

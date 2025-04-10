@@ -1,9 +1,9 @@
 let vantaEffect = null;
 
-document.addEventListener('DOMContentLoaded', function () {
-  const hamburger = document.querySelector('.hamburger');
-  const navList = document.querySelector('.nav-list');
-  const navItems = document.querySelectorAll('.nav-list li');
+document.addEventListener("DOMContentLoaded", function () {
+  const hamburger = document.querySelector(".hamburger");
+  const navList = document.querySelector(".nav-list");
+  const navItems = document.querySelectorAll(".nav-list li");
   const toggleSwitch = document.getElementById("themeToggle");
 
   // Dark Mode Zustand aus localStorage
@@ -20,12 +20,12 @@ document.addEventListener('DOMContentLoaded', function () {
       mouseControls: true,
       touchControls: true,
       gyroControls: false,
-      minHeight: 200.00,
-      minWidth: 200.00,
-      scale: 1.00,
-      scaleMobile: 1.00,
+      minHeight: 200.0,
+      minWidth: 200.0,
+      scale: 1.0,
+      scaleMobile: 1.0,
       zoom: 0.84,
-      color: isDarkMode ? "#000000" : "#a2a2a2"
+      color: isDarkMode ? "#000000" : "#a2a2a2",
     });
   }
 
@@ -42,70 +42,67 @@ document.addEventListener('DOMContentLoaded', function () {
       mouseControls: true,
       touchControls: true,
       gyroControls: false,
-      minHeight: 200.00,
-      minWidth: 200.00,
-      scale: 1.00,
-      scaleMobile: 1.00,
+      minHeight: 200.0,
+      minWidth: 200.0,
+      scale: 1.0,
+      scaleMobile: 1.0,
       zoom: 0.84,
-      color: darkNow ? "#000000" : "#a2a2a2"
+      color: darkNow ? "#000000" : "#a2a2a2",
     });
   });
 
   // Hamburger-Menü
-  hamburger.addEventListener('click', (event) => {
-    navList.classList.toggle('show');
+  hamburger.addEventListener("click", (event) => {
+    navList.classList.toggle("show");
     event.stopPropagation();
   });
 
-  navItems.forEach(item => {
-    item.addEventListener('click', () => {
-      navList.classList.remove('show');
+  navItems.forEach((item) => {
+    item.addEventListener("click", () => {
+      navList.classList.remove("show");
     });
   });
 
-  document.addEventListener('click', (event) => {
+  document.addEventListener("click", (event) => {
     if (!navList.contains(event.target) && !hamburger.contains(event.target)) {
-      navList.classList.remove('show');
-      hamburger.innerHTML = '&#9776;';
+      navList.classList.remove("show");
+      hamburger.innerHTML = "&#9776;";
     }
   });
 
   // Scroll to top
-  $('#up').on('click', function () {
-    $('html, body').animate({ scrollTop: 0 }, 800);
+  $("#up").on("click", function () {
+    $("html, body").animate({ scrollTop: 0 }, 800);
   });
 
-  $('#up').on('keydown', function (event) {
-    if (event.key === 'Enter' || event.key === ' ') {
-      $('html, body').animate({ scrollTop: 0 }, 800);
+  $("#up").on("keydown", function (event) {
+    if (event.key === "Enter" || event.key === " ") {
+      $("html, body").animate({ scrollTop: 0 }, 800);
     }
   });
 
   // Skip-Link Fokus
-  const skipLink = document.querySelector('.skip-link');
-  skipLink.setAttribute('tabindex', '0');
+  const skipLink = document.querySelector(".skip-link");
+  skipLink.setAttribute("tabindex", "0");
   skipLink.focus();
 
-  fetch('quotes.json')
-  .then(response => response.json())
-  .then(data => {
-    const container = document.getElementById('quoteContainer'); // Daten aus JSON laden und übe quoteContainer in Variable speichern
+  fetch("quotes.json")
+    .then((response) => response.json())
+    .then((data) => {
+      const container = document.getElementById("quoteContainer"); // Daten aus JSON laden und übe quoteContainer in Variable speichern
 
-    data.forEach(quote => {
-      const blockquote = document.createElement('blockquote'); //Schleife zum generieren der Blockquotes mit Klasse quote-card
-      blockquote.classList.add('quote-card');
+      data.forEach((quote) => {
+        const blockquote = document.createElement("blockquote"); //Schleife zum generieren der Blockquotes mit Klasse quote-card
+        blockquote.classList.add("quote-card");
 
-      const p = document.createElement('p');
-      p.textContent = `“${quote.text}“ – ${quote.author}`; //Text für die Karte aus quote.json in p Tags schreiben
+        const p = document.createElement("p");
+        p.textContent = `“${quote.text}“ – ${quote.author}`; //Text für die Karte aus quote.json in p Tags schreiben
 
-      blockquote.appendChild(p);
-      container.appendChild(blockquote);
+        blockquote.appendChild(p);
+        container.appendChild(blockquote);
+      });
+    })
+    .catch((error) => {
+      console.error("Fehler beim Laden der Zitate:", error);
     });
-  })
-  .catch(error => {
-    console.error('Fehler beim Laden der Zitate:', error);
-  });
-
-
-
 });
