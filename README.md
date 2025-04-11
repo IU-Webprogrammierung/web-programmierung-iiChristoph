@@ -83,13 +83,13 @@ Im Hinblick auf Barrierefreiheit informierte ich mich über geeignete HTML-Tags 
 
 Meine zusätzlichen Features, die ich implementiert habe:
 
-Theme-Switch für einen Dark- und Light-Mode sowie Speicherung des Modus im Cache
-Dynamischer Splashscreen, der auf Mausbewegungen reagiert
-Up-Animation
-Laden der Zitate über eine ausgelagerte JSON-Datei
-Skip-Link, um direkt zum Content zu springen
-Spin-Animationen für Hobby-Icons
-CSS-Variablen für leichtere Codeanpassungen
+- Theme-Switch für einen Dark- und Light-Mode sowie Speicherung des Modus im Cache
+- Dynamischer Splashscreen, der auf Mausbewegungen reagiert
+- Up-Animation
+- Laden der Zitate über eine ausgelagerte JSON-Datei
+- Skip-Link, um direkt zum Content zu springen
+- Spin-Animationen für Hobby-Icons
+- CSS-Variablen für leichtere Codeanpassungen
 
 Während des gesamten Entwicklungsprozesses arbeitete ich mit Branches, was reibungslos funktionierte. Insgesamt hat mir das Lab-Projekt viel Freude bereitet. Ich konnte neue, praxisnahe Kenntnisse erwerben, die mir in zukünftigen Webentwicklungsprojekten von großem Nutzen sein werden. Mit dem finalen Ergebnis der Webseite bin ich sehr zufrieden das Ziel das ich mir gesetzt habe konnte Ich erreichen. Die Darstellung habe ich abschließend noch einmal in GitHub Pages überprüft – dort passt alles. Screenshots sind der Abgabe beigefügt. Als Standardbrowser habe ich Chrome verwendet und konnte über die Lighthouse Evaluation bei Accessibility, SEO und Best Practices jeweils 100 % erreichen.
 
