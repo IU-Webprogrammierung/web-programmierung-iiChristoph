@@ -29,15 +29,6 @@
   background-color: #000000;
 }
 
-.vanta-bg {
-  width: 100%;
-  height: 100vh;
-  position: absolute; /* statt fixed */
-  top: 0;
-  left: 0;
-  z-index: -1;
-  overflow: hidden;
-}
 
 * {
   margin: 0;
@@ -83,6 +74,16 @@ img {
 /* generel-ende */
 
 /* Landing-Page*/
+
+.vanta-bg {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  overflow: hidden;
+}
 
 .skip-link {
   text-decoration: underline;
@@ -406,9 +407,9 @@ input:checked + .slider:before {
   font-weight: 300;
   margin: 1rem 0;
 }
-/*End projects*/
 
-/*Start cv*/
+
+/*CV*/
 .timeline ul {
   border-left: 4px solid;
   border-radius: 0.8rem;
@@ -465,9 +466,8 @@ input:checked + .slider:before {
   background-color: var(--timeline-dot);
 }
 
-/*End cv*/
 
-/*quote*/
+/*quotes*/
 .quotes {
   text-align: center;
   padding: 2rem;
@@ -528,7 +528,6 @@ input[type="submit"]:hover {
   background-color: var(--action-color);
 }
 
-/*menu*/
 
 /*footer*/
 .copyright {
@@ -559,6 +558,8 @@ input[type="submit"]:hover {
 .copyright p {
   font-size: 1.4rem;
 }
+
+/*Media Screen Queries*/
 
 @media screen and (max-width: 768px) {
   .dark-mode {

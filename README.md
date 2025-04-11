@@ -76,12 +76,22 @@ Die Website verfügt über einen Dark- und Lightmode. Bei der Umsetzung wurden e
 
 2. Projektordner in VSCode öffnen und über ein Liveserver-Plugin starten
 
-## Abstract Phase 3
+## Making Of
 
-In der letzten Phase habe ich das Feedback aus Phase 2 umgesetzt und den Darstellungsfehler im Lebenslauf behoben, des weiteren habe ich die Bilder verkleinert, da diese doch zu groß waren.
-Ich habe mich zudem dafür interessiert wie man 3D-Hintergründe implementiert die auch interaktiv auf die Maus reagieren, dabei bin ich auf Vanta und Three gestoßen, mit diesen Libraries habe ich für den Splashscreen einen Hintergrund implementiert. Für Performance Zwecke ist dieser Hintergrund vielleicht nicht optimal, aber ich wollte es trotzdem als zusätzliches Feature einbauen, das es visuell meiner Meinung nach ganz cool aussieht.
+In Phase 1 stand die Auseinandersetzung mit der Entwicklungsumgebung (IDE) sowie den grundlegenden Tools und Sprachen der Webentwicklung im Fokus. Aufgrund vorhandener Vorkenntnisse fiel mir der Einstieg relativ leicht. Ich habe mich schnell dafür entschieden eine Portfoliowebseite über mich selbst zu machen und konnte zügig mit der Konzeption beginnen, wobei ich bewusst auf ein schlichtes, aber zugleich abwechslungsreiches Design achtete, um den einzelnen Bereichen eine klare visuelle Trennung zu ermöglichen. Das positive Feedback zu meinem Konzept bestätigte diesen Ansatz, sodass ich in Phase 2 mit dem Styling fortfuhr. Dabei eignete ich mir neue Kenntnisse an; insbesondere die Nutzung von CSS-Variablen stellte sich für mich als besonders hilfreich heraus.
+Im Hinblick auf Barrierefreiheit informierte ich mich über geeignete HTML-Tags und wählte meine Features bewusst so, dass sie auch unter diesem Aspekt sinnvoll einsetzbar sind. In der abschließenden Phase optimierte ich meinen Code, ergänzte zusätzliche Funktionen und dokumentierte sämtliche Schritte in der README-Datei meines Git-Repositories. Dadurch ist eine transparente Nachverfolgbarkeit der implementierten Features gewährleistet. Am Konzept musste ich nichts Anpassen.
 
-Des weiteren habe ich mir noch den Code angeschaut und an den gewissen Stellen noch optimiert (verschönert).
+Meine zusätzlichen Features, die ich implementiert habe:
+
+Theme-Switch für einen Dark- und Light-Mode sowie Speicherung des Modus im Cache
+Dynamischer Splashscreen, der auf Mausbewegungen reagiert
+Up-Animation
+Laden der Zitate über eine ausgelagerte JSON-Datei
+Skip-Link, um direkt zum Content zu springen
+Spin-Animationen für Hobby-Icons
+CSS-Variablen für leichtere Codeanpassungen
+
+Während des gesamten Entwicklungsprozesses arbeitete ich mit Branches, was reibungslos funktionierte. Insgesamt hat mir das Lab-Projekt viel Freude bereitet. Ich konnte neue, praxisnahe Kenntnisse erwerben, die mir in zukünftigen Webentwicklungsprojekten von großem Nutzen sein werden. Mit dem finalen Ergebnis der Webseite bin ich sehr zufrieden das Ziel das ich mir gesetzt habe konnte Ich erreichen. Die Darstellung habe ich abschließend noch einmal in GitHub Pages überprüft – dort passt alles. Screenshots sind der Abgabe beigefügt. Als Standardbrowser habe ich Chrome verwendet und konnte über die Lighthouse Evaluation bei Accessibility, SEO und Best Practices jeweils 100 % erreichen.
 
 
 
